@@ -18,5 +18,5 @@ form.addEventListener('submit', (event) => {
 
     setToon(toon);
 
-    window.location = '/map/';
+    window.location = './map/';
 });

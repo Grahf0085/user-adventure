@@ -12,6 +12,7 @@ const quest = findById(questId, quests); // returns one of three objects in ques
 
 const image = document.querySelector('img');
 const audio = document.querySelector('audio');
+const video = document.getElementById('video');
 const title = document.querySelector('h2');
 const description = document.querySelector('p');
 const form = document.querySelector('form');
@@ -22,6 +23,8 @@ title.textContent = quest.title;
 
 image.src = '../assets/' + quest.image;
 audio.src = '../assets/' + quest.audio;
+video.innerHTML = quest.video;
+
 description.textContent = quest.description;
 
 for (let choice of quest.choices) {  // iterate through array of objects in questList.js

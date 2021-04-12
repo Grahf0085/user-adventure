@@ -2,8 +2,8 @@ const leapingLizzy = {
     id: 'leapingLizzy',
     title: 'A Notorious Monster named Leaping Lizzy',
     map: {
-        top: '193%',
-        left: '30%'
+        top: '65%',
+        left: '29%'
     },
     image: 'LL.jpg',
     audio: '',
@@ -46,7 +46,7 @@ const absoluteVirtue = {
     id: 'absoluteVirtue',
     title: 'Longest/most difficult fight in video game history.',
     map: {
-        top: '90%',
+        top: '30%',
         left: '55%'
     },
     image: 'av.jpg',
@@ -88,7 +88,7 @@ const paintbrushOfSouls = {
     id: 'paintbrushOfSouls',
     title: 'Paintbrush Of Souls',
     map: {
-        top: '230%',
+        top: '77%',
         left: '88%'
     },
     prerequisites: [],

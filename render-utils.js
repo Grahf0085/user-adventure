@@ -6,14 +6,14 @@ export function renderHeader() {
 
     const toon = getToon();
 
-    const section = document.createElement('section');
+    const div = document.createElement('div');
 
     if (toon.hp <= 0) {
-        section.textContent = `Name: ${toon.name}, Job: ${toon.job}, HP: YOU DIED, Gold: ${toon.gold}`;
+        div.textContent = `Name: ${toon.name}, Job: ${toon.job}, HP: YOU DIED, Gold: ${toon.gold}`;
     } else {
-        section.textContent = `Name: ${toon.name}, Job: ${toon.job}, HP: ${toon.hp}, Gold: ${toon.gold}`;
+        div.textContent = `Name: ${toon.name}, Job: ${toon.job}, HP: ${toon.hp}, Gold: ${toon.gold}`;
     }
 
-    header.append(section);
+    header.append(div);
 
 }

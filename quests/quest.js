@@ -6,7 +6,7 @@ renderHeader();
 
 const params = new URLSearchParams(window.location.search);  // returns everything after '/?' in URL?
 
-const questId = params.get('id');  // returns everything afyer 'id=' in URL
+const questId = params.get('id');  // returns everything after 'id=' in URL
 
 const quest = findById(questId, quests); // returns one of three objects in questList.js based on id in questList.js
 
@@ -30,7 +30,6 @@ description.textContent = quest.description;
 for (let choice of quest.choices) {  // iterate through array of objects in questList.js
 
     const label = document.createElement('label');
-
     const radio = document.createElement('input');
 
     radio.type = 'radio';
@@ -50,9 +49,9 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
-    const choiceId = formData.get('usersChoice');
-    const choice = findById(choiceId, quest.choices);
-    updateToon(questId, choice);
+    const choiceId = formData.get('usersChoice');  // returns id in choices array of objects
+    const choice = findById(choiceId, quest.choices);  // returns object matching choiceId
+    updateToon(questId, choice);  // uses questId to mark it as complete and choice to update hp and gold
 
     form.classList.add('hidden');
 

@@ -1,5 +1,8 @@
 import { getToon } from '../local-storage-utils.js';
 import quests from '../quests/questList.js';
+import { renderHeader } from '../render-utils.js';
+
+renderHeader();
 
 const toon = getToon();
 

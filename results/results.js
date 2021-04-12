@@ -1,5 +1,8 @@
 import { getToon } from '../local-storage-utils.js';
 import { aliveGoldMessages, deadGoldMessages, hpMessages } from './resultsMessage.js';
+import { renderHeader } from '../render-utils.js';
+
+renderHeader();
 
 const user = getToon();
 
@@ -29,9 +32,9 @@ const goldMessagesToUse = isUserDead ? deadGoldMessages : aliveGoldMessages;
 
 const resultsString = `${goldMessagesToUse[goldStatus]}. ${hpMessages[hpStatus]}`;
 
-const section = document.querySelector('section');
+const resultsSection = document.getElementById('results');
 
-section.textContent = resultsString;
+resultsSection.textContent = resultsString;
 
 const button = document.querySelector('button');
 

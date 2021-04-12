@@ -1,1 +1,1 @@
-import './example.test.js';
+import './toon-storage-test.js';

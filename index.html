@@ -9,44 +9,71 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/code-new-roman" type="text/css" />
+    <title>FFXI: Javascript Version</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
+        <h1>FFXI: Party Like It's 2005</h1>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <h2>Character Creation</h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
+        <form>
+            <fieldset>
+                <legend>Pick Your Job:</legend>
+                <section class="jobs">
+                    <label>
+                        <input type="radio" name="job" required value="Warrior">
+                        <img src="./assets/war.webp" width=100 height=100>
+                        Warrior
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Monk">
+                        <img src="./assets/mnk.webp" width=100 height=100>
+                        Monk
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Thief">
+                        <img src="./assets/thf.webp" width=100 height=100>
+                        Thief
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Red Mage">
+                        <img src="./assets/rdm.webp" width=100 height=100>
+                        Red Mage
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="White Mage">
+                        <img src="./assets/whm.webp" width=100 height=100>
+                        White Mage
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Black Mage">
+                        <img src="./assets/blm.webp" width=100 height=100>
+                        Black Mage
+                    </label>
+                </section>
+            </fieldset>
 
-        </section>
+            <section>
+                <label for="name">Name: </label>
+                <input name="name" required id="name">
+            </section>
+
+            <input type="submit" value="Start Game"></input>
+
+        </form>
+
+        <audio autoplay>
+            <source src="./assets/Final Fantasy XI CoP OST - Unity (320 kbps).mp3">
+        </audio>
+
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
+    <footer>
+    </footer>
     <script type="module" src="app.js"></script>
 </body>
 

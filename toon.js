@@ -5,7 +5,8 @@ export function makeToon(formData) {
         job: formData.get('job'),
         hp: 15,
         gold: 0,
-        quests: {}
+        quests: {
+        }
     };
 
     return toon;

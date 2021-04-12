@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/code-new-roman" type="text/css" />
     <title>FFXI: Javascript Version</title>
 </head>
 
@@ -20,43 +21,59 @@
         <h2>Character Creation</h2>
 
         <form>
+            <fieldset>
+                <legend>Pick Your Job:</legend>
+                <section class="jobs">
+                    <label>
+                        <input type="radio" name="job" required value="Warrior">
+                        <img src="/assets/war.webp" width=100 height=100>
+                        Warrior
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Monk">
+                        <img src="/assets/mnk.webp" width=100 height=100>
+                        Monk
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Thief">
+                        <img src="/assets/thf.webp" width=100 height=100>
+                        Thief
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Red Mage">
+                        <img src="/assets/rdm.webp" width=100 height=100>
+                        Red Mage
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="White Mage">
+                        <img src="/assets/whm.webp" width=100 height=100>
+                        White Mage
+                    </label>
+                    <label>
+                        <input type="radio" name="job" required value="Black Mage">
+                        <img src="/assets/blm.webp" width=100 height=100>
+                        Black Mage
+                    </label>
+                </section>
+            </fieldset>
+
             <section>
                 <label for="name">Name: </label>
-                <input required id="name">
+                <input name="name" required id="name">
             </section>
-            <section class="toon-creation">
-                <h4>Pick Your Job: </h4>
-                <label>
-                    <input type="radio" name="job" required value="Warrior">
-                    Warrior
-                </label>
-                <label>
-                    <input type="radio" name="job" required value="Monk">
-                    Monk
-                </label>
-                <label>
-                    <input type="radio" name="job" required value="Thief">
-                    Thief
-                </label>
-                <label>
-                    <input type="radio" name="job" required value="Red Mage">
-                    Red Mage
-                </label>
-                <label>
-                    <input type="radio" name="job" required value="White Mage">
-                    White Mage
-                </label>
-                <label>
-                    <input type="radio" name="job" required value="Black Mage">
-                    Black Mage
-                </label>
-            </section>
+
+            <input type="submit" value="Start Game"></input>
+
         </form>
-        <button>Start Game</button>
+
+        <audio autoplay>
+            <source src="/assets/Final Fantasy XI OST - Vana'diel March.mp3">
+        </audio>
+
     </main>
+
     <footer>
     </footer>
-
     <script type="module" src="app.js"></script>
 </body>
 

@@ -6,7 +6,8 @@ const leapingLizzy = {
         left: '30%'
     },
     image: 'LL.jpg',
-    audio: 'Final Fantasy XI OST - Gustaberg.mp3',
+    audio: '',
+    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/yObVbHtq8Dg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     description: `
         While running across the dessert you notice a lizard slightly larger than the other lizards.  It's jumping around and has very nice looking boots on its feet.
     `,
@@ -48,8 +49,8 @@ const absoluteVirtue = {
         top: '90%',
         left: '55%'
     },
-    image: 'AV.png',
-    audio: 'Final Fantasy XI CoP OST - Al\'Taieu.mp3',
+    image: 'av.jpg',
+    audio: '',
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Jbo_DNgykAE?start=30&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     // action: 'dragon-growl.aiff', What is this 
     description: `
@@ -93,6 +94,7 @@ const paintbrushOfSouls = {
     prerequisites: [],
     image: 'paintbrush.jpg',
     audio: 'Final Fantasy XI RotZ OST - Yuhtunga Jungle.mp3',
+    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/P5c9-3Hr2Ag?autoplay=1&start=337" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     action: '',
     description: `
         Deep inside a ancient temple you see a canvas next to a locked door. A paintbrush you picked up from somewhere else in the temple begins to twitch.

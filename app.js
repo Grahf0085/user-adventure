@@ -4,7 +4,7 @@
 
 // set event listeners to update state and DOM
 
-import { setToon, } from './local-storage-utils.js';
+import { setToon } from './local-storage-utils.js';
 import { makeToon } from './toon.js';
 
 const form = document.querySelector('form');

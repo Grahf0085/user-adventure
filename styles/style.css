@@ -7,14 +7,17 @@ body {
     
     background-image: url(../assets/ffxiIntro.jpg);
     background-size: cover;
+    margin: auto;
+    text-align: center;
 }
 
 header {
+    height: 75px;
+    background-color:sienna;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     box-shadow: var(--shadow);
-    height: 80px;
 }
 
 header h1 {
@@ -70,7 +73,7 @@ button, input {
 
 form {
     background: rgba(100, 100, 100, .3);
-    width: 90%;
+    width: 100%;
 }
 
 fieldset {
@@ -90,11 +93,16 @@ section label {
 }
 
 input {
-    padding: 5px;
+    padding: 2px;
     font-size: 16px;
+    margin-left: 15px;
 }
 
 label {
     font-size: 26px;
+}
 
+p {
+    background-color: sienna;
+    font-size: 1.5rem;
 }

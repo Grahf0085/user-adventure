@@ -1,7 +1,3 @@
-* {
-    font-family: 'CodeNewRomanRegular';
-}
-
 .background {
     width: 100%;
     height: 100%;
@@ -12,19 +8,12 @@
     position: relative;
 }
 
-header {
-    height: 50px;
-    background-color:sienna;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .quest {
     position: absolute;
-    color:royalblue;
+    color:seagreen;
     text-shadow: 1px 1px 1px black;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
 }
 
 .quest.completed:after {

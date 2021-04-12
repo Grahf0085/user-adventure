@@ -6,10 +6,6 @@ renderHeader();
 
 const toon = getToon();
 
-if (toon.hp <= 0 || hasCompletedQuests()) {
-    window.location = '../results/';
-}
-
 function hasCompletedQuests() {
     for (let quest of quests) {
         if (!toon.quests[quest.id]) {
@@ -20,9 +16,13 @@ function hasCompletedQuests() {
     return true;
 }
 
+if (toon.hp <= 0 || hasCompletedQuests()) {
+    window.location = '../results/';
+}
+
 const section = document.querySelector('section');
 
-for (let quest of quests) {
+for (let quest of quests) {  // cycle through list of quests, make a anchor tag for each one with its position and title.  Put a link for all uncompleted quests.  Otherwise put a checkmark by it.
 
     const anchorTag = document.createElement('a');
 

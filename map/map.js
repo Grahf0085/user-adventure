@@ -33,6 +33,10 @@ for (let quest of quests) {
     if (!toon.quests[quest.id]) {
         anchorTag.href = `../quests/?id=${quest.id}`;
     }
+    if (toon.quests[quest.id]) {
+        anchorTag.classList.add('completed');
+    }
 
     section.append(anchorTag);
 }
+

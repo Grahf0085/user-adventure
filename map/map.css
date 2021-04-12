@@ -12,3 +12,7 @@ body {
     color: rgb(255, 0, 0);
     text-shadow: 1px 1px 1px black;
 }
+
+.quest.completed:after {
+    content: ' ✔';
+}

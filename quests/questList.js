@@ -18,7 +18,7 @@ const leapingLizzy = {
             a rock at it to get its attention. Leaping Lizzy chases you until your friend arrives to help.  Leaping Lizzy gets a few good wacks in before your friend 
             arrives. After leaping lizard is dead the stranger takes the boots and leaves without saying a word."  
         `,
-        hp: -50,
+        hp: -5,
         gold: 0
     }, {
         id: 'fight',
@@ -28,15 +28,15 @@ const leapingLizzy = {
             The lizard has teeth and they are big. You stand panting, gazing, at the fancy boots on the 
             lizards feet you realize someone else will get them as the lizard jumps in the air and lands on you...squashing you to death.
         `,
-        hp: -1000,
+        hp: -15,
         gold: 0
     }, {
         id: 'run',
         description: 'Run Away',
         result: `
-            As you make a dash back to the safety of town a random orc chases you and take a bite of flesh, causing 70 hp damage.
+            As you make a dash back to the safety of town a random orc chases you and take a bite of flesh, causing 5 hp damage.
         `,
-        hp: -70,
+        hp: -5,
         gold: 0
     }]
 };
@@ -83,41 +83,32 @@ const absoluteVirtue = {
     }]
 };
 
-const treasure = {
-    id: 'treasure',
-    title: 'A Golden Treasure',
+const paintbrushOfSouls = {
+    id: 'paintbrushOfSouls',
+    title: 'Paintbrush Of Souls',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '192%',
+        left: '88%'
     },
-    prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
+    prerequisites: [],
+    image: 'paintbrush.jpg',
+    audio: 'Final Fantasy XI RotZ OST - Yuhtunga Jungle.mp3',
+    action: '',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        Deep inside a ancient temple you see a canvas next to a locked door. A paintbrush you picked up from somewhere else in the temple begins to twitch.
+        By focusing your thoughts on the paintbrush of souls, a new painting begins to appear on the canvas...
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 gold pieces!',
+        id: 'wait',
+        description: 'wait',
+        result: 'You wait 30 seconds and then succeed in projecting the image in your soul to the blank canvas. The door to a secret area is opened.',
         hp: 0,
-        gold: 40
+        gold: 100
     }, {
-        id: 'golden',
-        description: 'A Golden Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
-        hp: -50,
-        gold: 0
-    }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 hp',
-        hp: 35,
+        id: 'paint',
+        description: 'paint',
+        result: 'You paint a picture but the door is still locked.  A few green goblin looking things come around a corner and beat you up.',
+        hp: -5,
         gold: 0
     }]
 };
@@ -125,7 +116,7 @@ const treasure = {
 export const quests = [
     leapingLizzy,
     absoluteVirtue,
-    treasure,
+    paintbrushOfSouls,
 ];
 
 export default quests;

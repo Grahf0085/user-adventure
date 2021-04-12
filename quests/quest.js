@@ -58,7 +58,7 @@ form.addEventListener('submit', (event) => {
     section.append(returnMap);
 
     returnMap.addEventListener('click', () => {
-        window.location = ('../map');
+        window.location = '../map';
     });
 });
 

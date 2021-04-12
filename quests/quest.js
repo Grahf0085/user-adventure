@@ -1,5 +1,8 @@
 import { findById, updateToon } from '../local-storage-utils.js';
 import quests from './questList.js';
+import { renderHeader } from '../render-utils.js';
+
+renderHeader();
 
 const params = new URLSearchParams(window.location.search);  // returns everything after '/?' in URL?
 
@@ -12,10 +15,8 @@ const audio = document.querySelector('audio');
 const title = document.querySelector('h2');
 const description = document.querySelector('p');
 const form = document.querySelector('form');
-const section = document.querySelector('section');
-
-const button = document.createElement('button');  // not sure why I used query for previous five elements and made a element here
-button.textContent = 'Choose';
+const div = document.querySelector('div');
+const button = document.querySelector('button');
 
 title.textContent = quest.title;
 
@@ -55,7 +56,7 @@ form.addEventListener('submit', (event) => {
     description.textContent = choice.result;
     const returnMap = document.createElement('button');
     returnMap.textContent = 'Return to Map';
-    section.append(returnMap);
+    div.append(returnMap);
 
     returnMap.addEventListener('click', () => {
         window.location = '../map';

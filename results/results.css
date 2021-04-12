@@ -2,14 +2,6 @@
     font-family: 'CodeNewRomanRegular';
 }
 
-label {
-    display: flex;
-}
-
-.hidden {
-    display: none;
-}
-
 header {
     height: 50px;
     background-color:sienna;

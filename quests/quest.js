@@ -16,7 +16,7 @@ const video = document.getElementById('video');
 const title = document.querySelector('h2');
 const description = document.querySelector('p');
 const form = document.querySelector('form');
-const div = document.querySelector('div');
+const div = document.getElementById('return-map');
 const button = document.querySelector('button');
 
 title.textContent = quest.title;

@@ -70,7 +70,7 @@ button, input {
 
 form {
     background: rgba(100, 100, 100, .3);
-    width: 80%;
+    width: 90%;
 }
 
 fieldset {
@@ -87,4 +87,14 @@ section label {
 .jobs {
     display: flex;
     justify-content: center;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+label {
+    font-size: 26px;
+
 }

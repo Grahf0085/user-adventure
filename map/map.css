@@ -15,17 +15,20 @@ header {
     height: 50px;
     background-color:sienna;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .quest {
     position: absolute;
-    color: rgb(255, 0, 0);
+    color:royalblue;
     text-shadow: 1px 1px 1px black;
+    font-size: 1.1rem;
 }
 
 .quest.completed:after {
     content: ' ✔';
 }
+
+
 

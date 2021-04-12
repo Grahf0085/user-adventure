@@ -4,6 +4,7 @@
 
 label {
     display: flex;
+    margin: 0px;
 }
 
 .hidden {
@@ -14,6 +15,26 @@ header {
     height: 50px;
     background-color:sienna;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+body {
+    background-color: skyblue;
+}
+
+input {
+    margin: 0px;
+    margin-left: 20px;
+}
+
+p {
+    background-color: sienna;
+    font-size: 1.5rem;
+}
+
+body {
+
+    margin: auto;
+    text-align: center;
 }

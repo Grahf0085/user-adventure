@@ -7,7 +7,7 @@ export const aliveGoldMessages = {
 export const deadGoldMessages = {
     poor: 'you leave nothing for the other players',
     modest: 'you leave enough to buy other plays gear',
-    rich: 'other plays builds a monument in your honor'
+    rich: 'other players build a monument in your honor'
 };
 
 export const hpMessages = {
